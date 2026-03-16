@@ -2,7 +2,7 @@
  * The FunctionDemo class implements an application that display the Movie details
  * using the user defined methods
  */
-package Functions;
+package com.functions;
  
 public class FuntionDemo {
 	static void getMovieDetail(String moviename,String moviedes,int movieduration,String movielang,String movierelease,String moviecountry,String moviegenre) {
