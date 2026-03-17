@@ -1,5 +1,5 @@
+//This program to check whether a file or directory specified by pathname exists
 package com.hands_on_fileHandling;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
