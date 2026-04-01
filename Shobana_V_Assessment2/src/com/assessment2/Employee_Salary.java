@@ -33,17 +33,16 @@ class Employee{
 public class Employee_Salary {
 	public static void main(String[] args) {
 		Employee e1 = new Employee(101,"John","Manager",50000);
-		
 		System.out.println("EMPLOYEE DETAILS");
 		e1.displayInfo();
-		
 		System.out.println("\nAfter 10% Salary Increment:");
 		e1.increaseSalary(10);
 		e1.displayInfo();
-		
 		System.out.println("\nAfter 5% Increment + Bonus:");
 		e1.increaseSalary(5,2000);
 		e1.displayInfo();
+		
+		
 	}
 }
 

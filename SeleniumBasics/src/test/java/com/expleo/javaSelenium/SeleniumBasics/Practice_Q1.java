@@ -1,5 +1,8 @@
 package com.expleo.javaSelenium.SeleniumBasics;
 
+
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +30,8 @@ public class Practice_Q1 {
 		String page=driver.getPageSource();
 		System.out.println(page.length());
 		
+
+
 		
 		
 	    
