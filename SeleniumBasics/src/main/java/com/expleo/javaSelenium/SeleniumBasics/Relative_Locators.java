@@ -12,14 +12,11 @@ public class Relative_Locators {
 		driver.manage().window().maximize();
 		driver.get("https://www.hyrtutorials.com/p/add-padding-to-containers.html");
 		
-		//search.sendKeys("LastName",Keys.ENTER);
-		WebElement LastName=driver.findElement(By.xpath("//h1[text()=\"Register\"]"));
-		WebElement search=driver.findElement(with(By.tagName("input")).below(LastName));
-		search.sendKeys("LastName");
-		WebElement lastname=driver.findElement(By.xpath("//input[@maxlength=\"15\"]"));
-		WebElement find=driver.findElement(with(By.tagName("input")).above(search));
-		find.sendKeys("Shobana");
-
+		WebElement firstName = driver.findElement(By.xpath("//label[text() = \"First Name \"]/following-sibling::input[@name = \"name\"]"));
+		WebElement lastName = driver.findElement(with(By.tagName("input")).below(firstName));
+		
+		firstName.sendKeys("Shobana");
+		lastName.sendKeys("Viswanathan");
 	}
 
 }
