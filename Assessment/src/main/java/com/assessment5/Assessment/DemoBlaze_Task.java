@@ -20,9 +20,11 @@ public class DemoBlaze_Task {
 
 	public static void main(String[] args) {
     WebDriver driver = new ChromeDriver();
+    driver.manage().window().maximize();
     driver.get("https://demoblaze.com/");
     WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
      // Login to the Application 
+    
     WebElement login = driver.findElement(By.id("login2"));
     login.click();   
     WebElement username=wait.until(ExpectedConditions.elementToBeClickable(By.id("loginusername")));
