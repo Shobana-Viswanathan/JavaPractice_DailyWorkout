@@ -13,25 +13,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DemoBlaze_Task {
 
 	public static void main(String[] args) {
     WebDriver driver = new ChromeDriver();
     driver.get("https://demoblaze.com/");
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-    // Login to the Application 
-    WebElement login=driver.findElement(By.xpath("//a[@id='login2']"));
-    login.click();
-    WebElement username=driver.findElement(By.xpath("//input[@id=\"loginusername\"]"));
+    WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
+     // Login to the Application 
+    WebElement login = wait.until(ExpectedConditions.elementToBeClickable(By.id("login2")));
+    login.click();    
+    WebElement username=wait.until(ExpectedConditions.elementToBeClickable(By.id("loginusername")));
     username.sendKeys("Shobs");
-    WebElement password=driver.findElement(By.xpath("//input[@id=\"loginpassword\"]"));
+    WebElement password=wait.until(ExpectedConditions.elementToBeClickable(By.id("loginpassword")));
     password.sendKeys("shobi11");
-    WebElement submit=driver.findElement(By.xpath("//button[@onclick=\"logIn()\"]"));
+    WebElement submit=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick=\"logIn()\"]")));
     submit.click();
-    WebElement welcomemsg=driver.findElement(By.linkText("Welcome Shobs"));
+    WebElement welcomemsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nameofuser")));    
     String check= welcomemsg.getText();
-    if(check.contains("Welcome Shobs")) {
+    if(check.contains("Welcome")) {
     	System.out.println("Login Successful");
     }
     else {
@@ -40,51 +42,77 @@ public class DemoBlaze_Task {
    
    
    // Category Navigation & Product Handling
-   WebElement laptops=driver.findElement(By.linkText("Laptops"));
+   WebElement lap=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@onclick=\"byCat('notebook')\"]")));
    Actions act=new Actions(driver);
-   act.moveToElement(laptops).click().perform();
-   List<WebElement> product=driver.findElements(By.xpath("//div[@id='tbodyid']//h4/a"));
-   List<String> products=new ArrayList<>();
-   for(WebElement p:product) {
-	   products.add(p.getText());
+   act.moveToElement(lap).click().perform();
+   List<WebElement> productList=driver.findElements(By.xpath("//div[@id='tbodyid']//h4/a"));
+   List<String> productNames=new ArrayList(); 
+   for(WebElement p:productList) {
+	   productNames.add(p.getText());
+	   
    }
-   Collections.sort(products);
-   Set<String> sorted=new LinkedHashSet<>(products);  
-   System.out.println("Sorted List");
-   for(String name:sorted) {
+   Set<String> sorted=new LinkedHashSet<>(productNames);
+   Collections.sort(productNames);
+   for(String name:productNames) {
 	   System.out.println(name);
    }
-   JavascriptExecutor js=(JavascriptExecutor) driver;
-    WebElement macbook = driver.findElement(By.xpath("//a[text()='MacBook Pro']"));
-	js.executeScript("arguments[0].scrollIntoView(true);", macbook);
-	String productTit = macbook.getText();
-	if (productTit.equals("MacBook Pro")) {
-		System.out.println("Found Laptop: " + productTit);
-	} else {
-		System.out.println("Laptop not found");
+   JavascriptExecutor js = (JavascriptExecutor) driver;
+   WebElement macbook = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='MacBook Pro']")));
+   js.executeScript("arguments[0].scrollIntoView(true);", macbook);
+   String productTitle = macbook.getText();
+   System.out.println("Found Laptop: " + productTitle);   
+  
+   //Add product to cart
+   wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='MacBook Pro']"))).click();
+   wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Add to cart"))).click();
+   wait.until(ExpectedConditions.alertIsPresent());
+   driver.switchTo().alert().accept();
+   System.out.println("Product added to cart");
+   wait.until(ExpectedConditions.elementToBeClickable(By.id("cartur"))).click();
+   wait.until(ExpectedConditions.visibilityOfElementLocated( By.xpath("//tbody[@id='tbodyid']/tr")));
+   WebElement cartProduct = driver.findElement( By.xpath("//tbody[@id='tbodyid']/tr/td[2]"));
+	String cartTitle = cartProduct.getText();
+	WebElement cartPrice = driver.findElement(By.xpath("//tbody[@id='tbodyid']/tr/td[3]"));
+	String cartProductPrice = cartPrice.getText();
+	System.out.println("Cart Product: " + cartTitle);
+	System.out.println("Cart Price: " + cartProductPrice);
+	if(cartTitle.equals("MacBook Pro")) {
+		System.out.println("Validation Successful");
 	}
-	
-
-	// Add Product to Cart
-	WebElement addToCart = driver.findElement(By.xpath("//a[text()='Add to cart']"));
-	addToCart.click();
-	driver.switchTo().alert().accept();
-	WebElement cart = driver.findElement(By.id("cartur"));
-	cart.click();
-	WebElement productTitle = driver.findElement(By.xpath("//td[2]"));
-	String title = productTitle.getText();
-	WebElement productPrice = driver.findElement(By.xpath("//td[3]"));
-	String price = productPrice.getText();
-	if(title.equals("MacBook Pro")) {
-	    System.out.println("Product added to cart");
-	    System.out.println("MacBook Pro added to cart.");
-	} else {
-	    System.out.println("Product not added correctly");
+	else {
+		System.out.println("Validation Failed");
 	}
-	System.out.println("Product Name: " + title);
-	System.out.println("Product Price: " + price);
+	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Place Order']"))).click();
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("name"))).sendKeys("Shobana");
+	driver.findElement(By.id("country")).sendKeys("India");
+	driver.findElement(By.id("city")).sendKeys("Chennai");
+	driver.findElement(By.id("card")).sendKeys("123456789");
+	driver.findElement(By.id("month")).sendKeys("04");
+	driver.findElement(By.id("year")).sendKeys("2026");
+	wait.until(ExpectedConditions.elementToBeClickable( By.xpath("//button[text()='Purchase']"))).click();
+	WebElement confirmation = wait.until(ExpectedConditions.visibilityOfElementLocated( By.xpath("//div[@class='sweet-alert  showSweetAlert visible']")));
+	String purchase = confirmation.getText();
+	if (purchase.contains("Thank you for your purchase")) {
+		System.out.println("Order is placed successfully");
+		System.out.println("Order Details:\n" + purchase);
+	} else {
+		System.out.println("Order is Unsuccessful");
+	}
+	wait.until(ExpectedConditions.elementToBeClickable(
+			By.xpath("//button[text()='OK']"))).click();
 	
-    driver.quit();
-    
+	System.out.println("Alert handled successfully.");
+	driver.quit();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
