@@ -23,13 +23,13 @@ public class DemoBlaze_Task {
     driver.get("https://demoblaze.com/");
     WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
      // Login to the Application 
-    WebElement login = wait.until(ExpectedConditions.elementToBeClickable(By.id("login2")));
-    login.click();    
+    WebElement login = driver.findElement(By.id("login2"));
+    login.click();   
     WebElement username=wait.until(ExpectedConditions.elementToBeClickable(By.id("loginusername")));
     username.sendKeys("Shobs");
-    WebElement password=wait.until(ExpectedConditions.elementToBeClickable(By.id("loginpassword")));
+    WebElement password = driver.findElement(By.id("loginpassword")); 
     password.sendKeys("shobi11");
-    WebElement submit=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@onclick=\"logIn()\"]")));
+    WebElement submit =driver.findElement(By.xpath("//button[text()='Log in']"));
     submit.click();
     WebElement welcomemsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nameofuser")));    
     String check= welcomemsg.getText();
@@ -68,6 +68,8 @@ public class DemoBlaze_Task {
    wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Add to cart"))).click();
    wait.until(ExpectedConditions.alertIsPresent());
    driver.switchTo().alert().accept();
+	System.out.println("Alert handled successfully.");
+
    System.out.println("Product added to cart");
    wait.until(ExpectedConditions.elementToBeClickable(By.id("cartur"))).click();
    wait.until(ExpectedConditions.visibilityOfElementLocated( By.xpath("//tbody[@id='tbodyid']/tr")));
