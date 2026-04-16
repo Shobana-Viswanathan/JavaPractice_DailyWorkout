@@ -46,19 +46,20 @@ public class DemoBlaze_Task {
    Actions act=new Actions(driver);
    act.moveToElement(lap).click().perform();
    List<WebElement> productList=driver.findElements(By.xpath("//div[@id='tbodyid']//h4/a"));
-   List<String> productNames=new ArrayList(); 
+   List<String> productNames=new ArrayList<>(); 
    for(WebElement p:productList) {
 	   productNames.add(p.getText());
 	   
    }
-   Set<String> sorted=new LinkedHashSet<>(productNames);
    Collections.sort(productNames);
-   for(String name:productNames) {
+   Set<String> sorted=new LinkedHashSet<>(productNames);
+   for(String name:sorted) {
 	   System.out.println(name);
    }
+   
    JavascriptExecutor js = (JavascriptExecutor) driver;
    WebElement macbook = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='MacBook Pro']")));
-   js.executeScript("arguments[0].scrollIntoView(true);", macbook);
+   js.executeScript("window.scrollBy(0,500)");
    String productTitle = macbook.getText();
    System.out.println("Found Laptop: " + productTitle);   
   
@@ -98,8 +99,7 @@ public class DemoBlaze_Task {
 	} else {
 		System.out.println("Order is Unsuccessful");
 	}
-	wait.until(ExpectedConditions.elementToBeClickable(
-			By.xpath("//button[text()='OK']"))).click();
+	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='OK']"))).click();
 	
 	System.out.println("Alert handled successfully.");
 	driver.quit();
