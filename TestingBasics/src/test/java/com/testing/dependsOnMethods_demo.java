@@ -1,7 +1,5 @@
 package com.testing;
 
-import org.testng.annotations.Test;
-
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -11,13 +9,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
 
-public class NewTest_Demo {
+public class dependsOnMethods_demo {
+	
 	public WebDriver driver;
 	WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(15));
 	
-  @BeforeMethod(groups="smoke")
+  @BeforeMethod
   public void beforeTest() {
 	  ChromeOptions options=new ChromeOptions();
 	  options.addArguments("--start-maximized");
@@ -28,7 +27,7 @@ public class NewTest_Demo {
   }
 	  
   
-  @Test(groups="smoke")
+  @Test
   public void loginTest() {
 	  driver.findElement(By.xpath("//a[@id='login2']")).click();
 	  driver.findElement(By.xpath("//input[@id=\"loginusername\"]")).sendKeys("Shobs");
@@ -38,7 +37,7 @@ public class NewTest_Demo {
  
   
   
-  @Test(groups="regression")
+  @Test(dependsOnMethods="invalid2")
   public void invalid() {
 	  driver.findElement(By.xpath("//a[@id='login2']")).click();
 	  driver.findElement(By.xpath("//input[@id=\"loginusername\"]")).sendKeys("Shob");
@@ -48,7 +47,7 @@ public class NewTest_Demo {
 
   }
 	  
-  @Test(groups="regression")
+  @Test
   public void invalid2(){
 	  driver.findElement(By.xpath("//a[@id='login2']")).click();
 	  driver.findElement(By.xpath("//input[@id=\"loginusername\"]")).sendKeys("Shobs");
@@ -57,16 +56,8 @@ public class NewTest_Demo {
 	 
 
   }
- 
-  @Test(dependsOnGroups="smoke")
-  public void depentTest(){
-	  System.out.println("Done");
-  }
-  
-  
-  @AfterMethod(groups="smoke")
+  @AfterMethod
   public void afterTest() {
 	  driver.quit();
   }
-
 }
