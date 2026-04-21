@@ -17,18 +17,18 @@ public class NewTest_Demo {
 	public WebDriver driver;
 	WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(15));
 	
-  @BeforeMethod(groups="smoke")
+  @BeforeMethod
   public void beforeTest() {
 	  ChromeOptions options=new ChromeOptions();
 	  options.addArguments("--start-maximized");
-	  options.addArguments("--headless");
+	//  options.addArguments("--headless");
 	  driver = new ChromeDriver(options);
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	  driver.get("https://www.demoblaze.com/");
   }
 	  
   
-  @Test(groups="smoke")
+  @Test
   public void loginTest() {
 	  driver.findElement(By.xpath("//a[@id='login2']")).click();
 	  driver.findElement(By.xpath("//input[@id=\"loginusername\"]")).sendKeys("Shobs");
@@ -58,13 +58,13 @@ public class NewTest_Demo {
 
   }
  
-  @Test(dependsOnGroups="smoke")
+  @Test
   public void depentTest(){
 	  System.out.println("Done");
   }
   
   
-  @AfterMethod(groups="smoke")
+  @AfterMethod
   public void afterTest() {
 	  driver.quit();
   }
