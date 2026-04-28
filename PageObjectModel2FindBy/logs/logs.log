@@ -1,0 +1,16 @@
+[DEBUG] 2026-04-28 19:42:08.757 [main] TestNG - suiteXmlPath: "C:\Users\Hp\OneDrive\Desktop\Expleo Training\PageObjectModel2FindBy\testng.xml"
+[INFO ] 2026-04-28 19:42:09.127 [main] Utils - [TestNG] Running:
+  C:\Users\Hp\OneDrive\Desktop\Expleo Training\PageObjectModel2FindBy\testng.xml
+
+[DEBUG] 2026-04-28 19:42:09.421 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-28 19:42:09.429 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-28 19:42:14.213 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-28 19:42:16.411 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-28 19:42:20.149 [main] BaseTest - Browser launched
+[INFO ] 2026-04-28 19:42:20.917 [main] BaseTest - Browser closed
+[DEBUG] 2026-04-28 19:42:20.932 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-28 19:42:20.935 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-28 19:42:24.997 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-28 19:42:27.368 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-28 19:42:31.169 [main] BaseTest - Browser launched
+[INFO ] 2026-04-28 19:42:33.676 [main] BaseTest - Browser closed
