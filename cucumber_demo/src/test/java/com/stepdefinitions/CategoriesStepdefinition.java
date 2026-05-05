@@ -35,7 +35,7 @@ public class CategoriesStepdefinition {
         driver.get("https://demoblaze.com/");
     }
 
-    @When("User clicks on Phones button")
+    @When("User clicks on phones button")
     public void user_clicks_phones_button() {
         wait.until(ExpectedConditions.elementToBeClickable(
                 By.linkText("Phones"))).click();

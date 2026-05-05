@@ -6,7 +6,7 @@ Background:
 
 @categories
 Scenario: Phone category should display
-  When User clicks on Phones button
+  When User clicks on phones button
   Then User should be able to view the Phone category
 
 @categories

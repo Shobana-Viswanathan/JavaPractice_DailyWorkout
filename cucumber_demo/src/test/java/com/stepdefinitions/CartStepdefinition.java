@@ -36,7 +36,7 @@ public class CartStepdefinition {
         driver.get("https://demoblaze.com/");
     }
 
-    @When("User clicks Phones button")
+    @When("User clicks Phone button")
     public void user_clicks_phones_button() {
         wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Phones"))).click();
     }

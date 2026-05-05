@@ -6,7 +6,7 @@ Background:
 
 @phone
 Scenario: Product of phone
-  When User clicks Phones button
+  When User clicks Phone button
   And User click on "Samsung galaxy s6"
   And User have to click button "Add to cart"
   Then User should add the product successfully to cart
