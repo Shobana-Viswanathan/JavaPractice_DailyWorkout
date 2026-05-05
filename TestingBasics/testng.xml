@@ -2,8 +2,23 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.testing.NewTest_Demo"/>
-    </classes>
+   <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.demoblaze.com/"/>
+
+       
+        <parameter name="validUser" value="Shobs"/>
+        <parameter name="validPass" value="shobi11"/>
+
+        <parameter name="wrongusername" value="Shob"/>
+        <parameter name="Pass" value="shobi11"/>
+
+   
+        <parameter name="User" value="Shobs"/>
+        <parameter name="wrongPass" value="shobi123"/>
+
+  <classes>
+  
+  <class name="com.testing.ParameterizationDemo"></class>
+  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
