@@ -1,0 +1,308 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 04 19:20:36 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>8 seconds (8031 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "Login into Demoblaze application"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is on Home page&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User is on Home page&quot;)
+public void user_is_on_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User have to click login link&quot;)
+public void user_have_to_click_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters valid username as {string}&quot;)
+public void user_enters_valid_username_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters valid password as {string}&quot;)
+public void user_enters_valid_password_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks login button&quot;)
+public void user_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User should be able to login successfully and have to verify the name of user&quot;)
+public void user_should_be_able_to_login_successfully_and_have_to_verify_the_name_of_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on Home page(file:///C:/Users/Hp/OneDrive/Desktop/Expleo%20Training/cucumber_demo/src/test/resources/com/features/Login.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace560041895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace560041895'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is on Home page&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User is on Home page&quot;)
+public void user_is_on_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User have to click login link&quot;)
+public void user_have_to_click_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters valid username as {string}&quot;)
+public void user_enters_valid_username_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters valid password as {string}&quot;)
+public void user_enters_valid_password_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks login button&quot;)
+public void user_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User should be able to login successfully and have to verify the name of user&quot;)
+public void user_should_be_able_to_login_successfully_and_have_to_verify_the_name_of_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on Home page(file:///C:/Users/Hp/OneDrive/Desktop/Expleo%20Training/cucumber_demo/src/test/resources/com/features/Login.feature:5)
+</pre></div></td>
+<td>3</td>
+<td>com.runner.TestNGRunner@68e5eea7</td></tr>
+<tr>
+<td title='com.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid username", "Login into Demoblaze application"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is on Home page&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User is on Home page&quot;)
+public void user_is_on_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User have to click login link&quot;)
+public void user_have_to_click_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters invalid username as {string}&quot;)
+public void user_enters_invalid_username_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters password as {string}&quot;)
+public void user_enters_password_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks login button&quot;)
+public void user_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User should not be able to login successfully and have the alert message as wrong username&quot;)
+public void user_should_not_be_able_to_login_successfully_and_have_the_alert_message_as_wrong_username() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on Home page(file:///C:/Users/Hp/OneDrive/Desktop/Expleo%20Training/cucumber_demo/src/test/resources/com/features/Login.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace390994793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace390994793'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is on Home page&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User is on Home page&quot;)
+public void user_is_on_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User have to click login link&quot;)
+public void user_have_to_click_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters invalid username as {string}&quot;)
+public void user_enters_invalid_username_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters password as {string}&quot;)
+public void user_enters_password_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks login button&quot;)
+public void user_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User should not be able to login successfully and have the alert message as wrong username&quot;)
+public void user_should_not_be_able_to_login_successfully_and_have_the_alert_message_as_wrong_username() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on Home page(file:///C:/Users/Hp/OneDrive/Desktop/Expleo%20Training/cucumber_demo/src/test/resources/com/features/Login.feature:5)
+</pre></div></td>
+<td>1</td>
+<td>com.runner.TestNGRunner@68e5eea7</td></tr>
+<tr>
+<td title='com.runner.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.runner.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid password", "Login into Demoblaze application"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is on Home page&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User is on Home page&quot;)
+public void user_is_on_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User have to click login link&quot;)
+public void user_have_to_click_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters username as {string}&quot;)
+public void user_enters_username_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters invalid password as {string}&quot;)
+public void user_enters_invalid_password_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks login button&quot;)
+public void user_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User should not be able to login into application successfully and have the alert message as wrong password&quot;)
+public void user_should_not_be_able_to_login_into_application_successfully_and_have_the_alert_message_as_wrong_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on Home page(file:///C:/Users/Hp/OneDrive/Desktop/Expleo%20Training/cucumber_demo/src/test/resources/com/features/Login.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace750797656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750797656'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;User is on Home page&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User is on Home page&quot;)
+public void user_is_on_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User have to click login link&quot;)
+public void user_have_to_click_login_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters username as {string}&quot;)
+public void user_enters_username_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User enters invalid password as {string}&quot;)
+public void user_enters_invalid_password_as(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;User clicks login button&quot;)
+public void user_clicks_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;User should not be able to login into application successfully and have the alert message as wrong password&quot;)
+public void user_should_not_be_able_to_login_into_application_successfully_and_have_the_alert_message_as_wrong_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.User is on Home page(file:///C:/Users/Hp/OneDrive/Desktop/Expleo%20Training/cucumber_demo/src/test/resources/com/features/Login.feature:5)
+</pre></div></td>
+<td>1</td>
+<td>com.runner.TestNGRunner@68e5eea7</td></tr>
+</table><p>
+</body>
+</html>
