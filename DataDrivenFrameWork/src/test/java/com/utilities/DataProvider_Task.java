@@ -14,13 +14,13 @@ public class DataProvider_Task {
     @DataProvider(name="ValidexcelData", parallel = true)
     public Object[][] ValidexcelDataProvider() throws IOException {
         Object[][] arrObj = getExcelData("src\\test\\resources\\dataset.xlsx", "Sheet1");
-        return new Object[][] { arrObj[0] };   
+        return arrObj; 
     }
 
     @DataProvider(name="InValidexcelData", parallel = true)
     public Object[][] InvalidexcelDataProvider() throws IOException {
-        Object[][] arrObj = getExcelData("src\\test\\resources\\dataset.xlsx", "Sheet1");
-        return new Object[][] { arrObj[1], arrObj[2] };  
+        Object[][] arrObj = getExcelData("src\\test\\resources\\dataset.xlsx", "Sheet2");
+        return arrObj;
     }
 
     private String[][] getExcelData(String FileName, String SheetName) {

@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 import com.utilities.DataProvider_Task;
 
-public class LoginTest {
+public class TutorialsNinjaTest {
 	 private static final ThreadLocal <WebDriver> driver=new ThreadLocal <WebDriver>();
 	  
 	  @BeforeMethod
@@ -30,7 +30,7 @@ public class LoginTest {
 	   }
 		
 
-	  @Test(dataProvider="ValidLoginData",dataProviderClass = DataProvider_Task.class)
+	  @Test(dataProvider="ValidexcelData",dataProviderClass = DataProvider_Task.class)
 	  public void validLogin(String email,String password) {
 		  
 		  WebDriver driver1 = driver.get();
@@ -62,7 +62,7 @@ public class LoginTest {
 		  }
 	  
 	  
-	  @Test(dataProvider="InValidLoginData",dataProviderClass = DataProvider_Task.class)
+	  @Test(dataProvider="InValidexcelData",dataProviderClass = DataProvider_Task.class)
 	  public void invalidLogin(String email,String password) {
 		  
 		  WebDriver driver1 = driver.get();
