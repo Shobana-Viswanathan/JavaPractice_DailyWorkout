@@ -6,3 +6,10 @@
 [INFO ] 2026-04-28 10:46:21.089 [main] demotest - Page title is: Account Login
 [INFO ] 2026-04-28 10:46:21.098 [main] demolistenerfail - Test PASSED: loginTest
 [INFO ] 2026-04-28 10:46:21.101 [main] demotest - Closing browser
+[INFO ] 2026-04-28 10:54:05.322 [main] demotest - Launching browser
+[INFO ] 2026-04-28 10:54:08.243 [main] demotest - Clicking My Account
+[INFO ] 2026-04-28 10:54:08.386 [main] demotest - Clicking Login
+[INFO ] 2026-04-28 10:54:08.744 [main] demotest - Entering credentials
+[INFO ] 2026-04-28 10:54:08.981 [main] demotest - Clicking Login button
+[INFO ] 2026-04-28 10:54:09.104 [main] demotest - Page title is: Account Login
+[INFO ] 2026-04-28 10:54:09.113 [main] demotest - Closing browser
