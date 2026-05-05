@@ -5,6 +5,7 @@
     <classes>
       <class name="com.test.LoginTest">
         <methods>
+          <include name="InvalidLogin" invocation-numbers="0 1"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="LoginValidation" invocation-numbers="0"/>

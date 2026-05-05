@@ -3,6 +3,8 @@ package com.test;
 import java.io.IOException;
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -21,11 +23,13 @@ import com.utilities.DPExcel;
 
 public class LoginTest {
 	private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+	public static Logger logger=LogManager.getLogger(LoginTest.class);
 	
 	@BeforeMethod
 	public void beforeMethod() {
 		System.out.println("Start the test");
 		driver.set(new ChromeDriver());
+		logger.info("Launched browser");
 	}
 	
 	@Test(dataProvider="ValidexcelData", dataProviderClass=DPExcel.class)
@@ -54,7 +58,8 @@ public class LoginTest {
 		
 		Assert.assertEquals(Actual, ExpectedMessage);
 		
-		System.out.println("Login Successful");   
+		System.out.println("Login Successful");
+		logger.info("Login into application was successful");
 	}
 	
 	@Test(dataProvider="InValidexcelData", dataProviderClass=DPExcel.class)
@@ -89,6 +94,7 @@ public class LoginTest {
 		System.out.println(alert_message);   
 		
 		alert.accept();
+		logger.warn("Login Failed.");
 	}
 	
 	@AfterMethod
