@@ -2,12 +2,14 @@ package com.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.pages.DashboardPage;
 import com.pages.LoginPage;
 import com.utilities.Data_Provider;
-
+import com.utilities.ListenersClass;
+@Listeners(ListenersClass.class)
 public class LoginTest extends BaseTest {
 
     LoginPage objLogin;
@@ -41,6 +43,6 @@ public class LoginTest extends BaseTest {
         objLogin.login(username, password);
 
         String actual = objLogin.getErrText();
-        Assert.assertTrue(actual.contains("Invalid"));
+        Assert.assertTrue(actual.contains("Invalidss"));
     }
 }

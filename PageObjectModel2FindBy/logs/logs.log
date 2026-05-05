@@ -14,3 +14,119 @@
 [INFO ] 2026-04-28 19:42:27.368 [TestNG-PoolService-1] BaseTest - Browser closed
 [INFO ] 2026-04-28 19:42:31.169 [main] BaseTest - Browser launched
 [INFO ] 2026-04-28 19:42:33.676 [main] BaseTest - Browser closed
+[DEBUG] 2026-04-29 12:39:24.380 [main] TestNG - suiteXmlPath: "C:\Users\Hp\AppData\Local\Temp\testng-eclipse--1264853469\testng-customsuite.xml"
+[INFO ] 2026-04-29 12:39:25.047 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+[INFO ] 2026-04-29 12:39:25.059 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+[INFO ] 2026-04-29 12:39:25.064 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.065 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.067 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.068 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.071 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.072 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.074 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.075 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.077 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.077 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.079 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.080 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.082 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.082 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.115 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 16 ms.
+[INFO ] 2026-04-29 12:39:25.163 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 48 ms.
+[INFO ] 2026-04-29 12:39:25.173 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.174 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO ] 2026-04-29 12:39:25.185 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.186 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.187 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.188 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.191 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+[INFO ] 2026-04-29 12:39:25.194 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO ] 2026-04-29 12:39:25.202 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.202 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.203 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.204 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO ] 2026-04-29 12:39:25.234 [main] Utils - [TestNG] Running:
+  C:\Users\Hp\AppData\Local\Temp\testng-eclipse--1264853469\testng-customsuite.xml
+
+[INFO ] 2026-04-29 12:39:25.282 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 9 ms.
+[DEBUG] 2026-04-29 12:39:25.691 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 12:39:25.700 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 12:39:35.395 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 12:39:38.771 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-29 12:39:43.643 [main] BaseTest - Browser launched
+[INFO ] 2026-04-29 12:39:44.377 [main] BaseTest - Browser closed
+[DEBUG] 2026-04-29 12:39:44.397 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 12:39:44.401 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 12:39:49.212 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 12:39:51.974 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-29 12:39:52.211 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@153f66e7: 140 ms
+[INFO ] 2026-04-29 12:39:52.213 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@566d0c69: 2 ms
+[INFO ] 2026-04-29 12:39:52.235 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@57c88764: 22 ms
+[INFO ] 2026-04-29 12:39:52.248 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@2227a6c1: 12 ms
+[INFO ] 2026-04-29 12:39:52.266 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7fab4be7: 17 ms
+[INFO ] 2026-04-29 12:39:52.267 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@a64e035: 0 ms
+[DEBUG] 2026-04-29 13:53:18.577 [main] TestNG - suiteXmlPath: "C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml"
+[DEBUG] 2026-04-29 13:56:30.403 [main] TestNG - suiteXmlPath: "C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml"
+[INFO ] 2026-04-29 13:56:31.146 [main] Utils - [TestNG] Running:
+  C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml
+
+[DEBUG] 2026-04-29 13:56:31.852 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 13:56:31.861 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 13:56:42.356 [TestNG-tests-2] BaseTest - Browser launched
+[INFO ] 2026-04-29 13:56:42.766 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 13:56:45.917 [TestNG-tests-2] BaseTest - Browser closed
+[INFO ] 2026-04-29 13:56:46.045 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-29 13:56:51.508 [TestNG-tests-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 13:56:52.844 [TestNG-tests-1] BaseTest - Browser closed
+[DEBUG] 2026-04-29 13:56:52.886 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 13:56:52.894 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 13:56:58.134 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 13:57:01.632 [TestNG-PoolService-1] BaseTest - Browser closed
+[DEBUG] 2026-04-29 14:07:15.483 [main] TestNG - suiteXmlPath: "C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml"
+[INFO ] 2026-04-29 14:07:16.115 [main] Utils - [TestNG] Running:
+  C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml
+
+[DEBUG] 2026-04-29 14:07:16.895 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 14:07:16.911 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 14:07:24.530 [TestNG-tests-2] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:07:27.786 [TestNG-tests-2] BaseTest - Browser closed
+[INFO ] 2026-04-29 14:07:32.507 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:07:35.535 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-29 14:07:40.406 [TestNG-tests-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:07:41.207 [TestNG-tests-1] BaseTest - Browser closed
+[DEBUG] 2026-04-29 14:07:41.237 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 14:07:41.241 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 14:07:45.968 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:07:48.828 [TestNG-PoolService-1] BaseTest - Browser closed
+[DEBUG] 2026-04-29 14:09:58.639 [main] TestNG - suiteXmlPath: "C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml"
+[INFO ] 2026-04-29 14:09:59.237 [main] Utils - [TestNG] Running:
+  C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml
+
+[DEBUG] 2026-04-29 14:10:00.025 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 14:10:00.043 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 14:10:11.030 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:10:11.085 [TestNG-tests-2] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:10:28.434 [TestNG-tests-2] BaseTest - Browser closed
+[INFO ] 2026-04-29 14:10:28.449 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-29 14:10:34.908 [TestNG-tests-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:10:39.675 [TestNG-tests-1] BaseTest - Browser closed
+[DEBUG] 2026-04-29 14:10:39.707 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 14:10:39.712 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 14:11:01.656 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:11:15.101 [TestNG-PoolService-1] BaseTest - Browser closed
+[DEBUG] 2026-04-29 14:51:57.979 [main] TestNG - suiteXmlPath: "C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml"
+[INFO ] 2026-04-29 14:51:58.665 [main] Utils - [TestNG] Running:
+  C:\Users\Hp\OneDrive\Desktop\Expleo Training\JavaPractice_DailyWorkout\PageObjectModel2FindBy\testng.xml
+
+[DEBUG] 2026-04-29 14:51:59.365 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 14:51:59.374 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 14:52:03.370 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:52:03.418 [TestNG-tests-2] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:52:13.798 [TestNG-tests-2] BaseTest - Browser closed
+[INFO ] 2026-04-29 14:52:14.004 [TestNG-PoolService-1] BaseTest - Browser closed
+[INFO ] 2026-04-29 14:52:15.254 [TestNG-tests-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:52:25.704 [TestNG-tests-1] BaseTest - Browser closed
+[DEBUG] 2026-04-29 14:52:25.728 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2026-04-29 14:52:25.733 [TestNG-tests-1] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[INFO ] 2026-04-29 14:52:26.956 [TestNG-PoolService-1] BaseTest - Browser launched
+[INFO ] 2026-04-29 14:52:37.598 [TestNG-PoolService-1] BaseTest - Browser closed
